@@ -1,0 +1,57 @@
+@font-face {
+  font-family: heading;
+  src: url(./assets/GeistMono-Bold.woff2);
+}
+@font-face {
+  font-family: body;
+  src: url(./assets/GeistMono-Medium.woff2);
+}
+
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.head{
+  text-align: center;
+}
+.head h1{
+  font-size: 6rem;
+  font-family: body;
+}
+
+.loading-anim-page{
+  width: 100%;
+  position: absolute;
+  height: 100vh;
+  z-index: 1;
+  background-color: white;
+  visibility: hidden;
+
+}
+.text-reveal{
+  width: 100%;
+  position: absolute;
+  height: 100vh;
+  text-align: center;
+  background-color: black;
+}
+.heading-reveal{
+  font-size: 3rem;
+  width: 100%;
+  font-family: heading;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
